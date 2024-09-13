@@ -47,8 +47,15 @@ nav ul li a:hover {
     color: #ffffff;
 }
 
+section {
+    margin-bottom: 40px; /* Espaçamento entre as seções */
+    padding: 20px; /* Espaçamento interno */
+}
+
 .container {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
 }
 
@@ -113,13 +120,15 @@ h2 {
 }
 
 .skills-list li {
-    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px; /* Aumentei o espaçamento entre os itens */
     background-color: #282c34;
-    padding: 10px 20px;
+    padding: 15px 25px; /* Aumentei o padding para mais espaço interno */
     border-radius: 5px;
-    color: #61dafb;
+    color: #f1f1f1;
     font-size: 1.2rem;
-    transition: background-color 0.3s;
 }
 
 .skills-list li:hover {
@@ -199,8 +208,6 @@ footer a {
 }
 
 
-
-
 .skills-list li {
     display: flex;
     align-items: center;
@@ -222,6 +229,7 @@ footer a {
 .skills-list li {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 10px;
     background-color: #282c34;
     padding: 10px 20px;
@@ -254,11 +262,11 @@ footer a {
 .skills-list li:nth-child(6) i { /* SQL */
     color: #00758F;
 }
-.skills-list li:nth-child(7) i { /* AWS */
-    color: #3776AB;
-}
-.skills-list li:nth-child(8) i { /* Office */
+.skills-list li:nth-child(7) i { /* Office */
     color: #D83B01;
+}
+.skills-list li:nth-child(8) i { /* AWS */
+    color: #3776AB;
 }
 
 /* Hover Effects */
@@ -275,9 +283,19 @@ footer a {
 }
 
 @media (max-width: 768px) {
+        .container {
+            padding: 10px; /* Reduz o espaçamento em dispositivos móveis */
+        }
+
+        .section {
+            margin-bottom: 20px; /* Espaçamento menor entre seções */
+            padding: 10px; /* Reduz o padding para telas menores */
+        }
         .header-content {
             flex-direction: column;
         }
+
+
     
         .projects-grid {
             flex-direction: column;
@@ -285,6 +303,50 @@ footer a {
         }
 
         .container {
-            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu {
+            border-top: 2px solid var(--verdeLimao);
+            border-bottom: 2px solid var(--verdeLimao);
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        .menu a {
+            margin: 0 auto;
+            color: var(--verdeMusgo); /* Cor inicial */
+            text-decoration: none;
+            animation: colorOscillation 3s infinite alternate;
+        }
+        
+        @keyframes colorOscillation {
+            0% {
+                color: var(--verdeMusgo); /* Cor inicial */
+            }
+            100% {
+                color: var(--verdeEsmeralda); /* Cor de oscilação */
+            }
+        }
+
+        .header-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-text h1 {
+            margin: 0;
+            line-height: 40px;
+            padding: 10px;
+        }
+
+        .header-text p {
+            margin-top: 20px;
         }
     }
