@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --verdeNeon: #39FF14;
+    --verdeEsmeralda: #50C878;
+    --verdeEscuro: #0B3D0B;
+    --verdeLimao: #32CD32;
+    --verdeMusgo: #8A9A5B;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e1e1e 0%, #3a3a3a 100%);
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+header {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--verdeMusgo);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    border: 2px solid var(--verdeMusgo);
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+.header-text h1 {
+    font-size: 3rem;
+    color: var(--verdeMusgo);
+}
+
+.header-text p {
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--verdeMusgo);
+}
+
+#sobre-mim {
+    margin-top: 20vh;
+}
+
+#sobre-mim p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+#tecnologias {
+    margin: 20vh;
+}
+
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.skills-list li {
+    margin: 10px;
+    background-color: #282c34;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #61dafb;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.skills-list li:hover {
+    background-color: #61dafb;
+    color: #282c34;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #282c34;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    color: var(--verdeEsmeralda);
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #61dafb;
+    font-weight: bold;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contato input, #contato textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+}
+
+#contato button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--verdeEsmeralda);
+    color: #282c34;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+#contato button:hover {
+    background-color: #ffffff;
+    color: #282c34;
+}
+
+footer {
+    background-color: #282c34;
+    padding: 20px;
+    text-align: center;
+    color: #61dafb;
+}
+
+footer a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    background-color: #282c34;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--verdeEsmeralda);
+    font-size: 1.2rem;
+} */
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    background-color: #282c34;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #f1f1f1;
+    font-size: 1.2rem;
+}
+
+.skills-list i {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+/* Cores para cada tecnologia */
+.skills-list li:nth-child(1) i { /* HTML */
+    color: #E34F26;
+}
+.skills-list li:nth-child(2) i { /* CSS */
+    color: #1572B6;
+}
+.skills-list li:nth-child(3) i { /* JavaScript */
+    color: #F7DF1E;
+}
+.skills-list li:nth-child(4) i { /* Java */
+    color: #007396;
+}
+.skills-list li:nth-child(5) i { /* Python */
+    color: #FF9900;
+}
+.skills-list li:nth-child(6) i { /* SQL */
+    color: #00758F;
+}
+.skills-list li:nth-child(7) i { /* AWS */
+    color: #3776AB;
+}
+.skills-list li:nth-child(8) i { /* Office */
+    color: #D83B01;
+}
+
+/* Hover Effects */
+.skills-list li:hover {
+    background-color: var(--verdeMusgo);
+    color: #282c34;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.skills-list li i:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}

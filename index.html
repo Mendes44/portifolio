@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Marcos Mendes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#tecnologias">Tecnologias</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="container header-content">
+            <img src="assents/Perfil-removebg-preview.png" alt="Marcos Mendes"  title="Foto de Marcos Mendes" class="profile-pic">
+            <div class="header-text">
+                <h1>Marcos Mendes</h1>
+                <p>Desenvolvedor Full Stack | Certificado AWS Cloud Practitioner</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre-mim">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Sou um desenvolvedor com experiência em diversas tecnologias e com certificação em AWS Cloud Practitioner. Trabalho com desenvolvimento de aplicações web e automatizações usando tecnologias modernas e inovadoras.</p>
+        </div>
+    </section>
+
+    <section id="tecnologias">
+        <div class="container">
+            <h2>Tecnologias</h2>
+            <ul class="skills-list">
+                <li><i class="fab fa-html5"></i> HTML</li>
+                <li><i class="fab fa-css3-alt"></i> CSS</li>
+                <li><i class="fab fa-js"></i> JavaScript</li>
+                <li><i class="fab fa-java"></i> Java</li>
+                <li><i class="fab fa-python"></i> Python</li>
+                <li><i class="fas fa-database"></i> SQL</li>
+                <li><i class="fas fa-cloud"></i> AWS Certified Cloud Practitioner</li>
+                <li><i class="fas fa-laptop"></i> Office</li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <section id="projetos">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="projects-grid">
+                <!-- 10 Cards de Projetos -->
+                <div class="project-card">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#" target="_blank">Ver no GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#" target="_blank">Ver no GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#" target="_blank">Ver no GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#" target="_blank">Ver no GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#" target="_blank">Ver no GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#" target="_blank">Ver no GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#" target="_blank">Ver no GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#" target="_blank">Ver no GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#" target="_blank">Ver no GitHub</a>
+                </div>
+                <!-- Repetir até o projeto 10 -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="form-response"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Desenvolvido por Marcos Mendes | <a href="https://github.com/seu-github" target="_blank">GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
