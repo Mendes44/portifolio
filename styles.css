@@ -198,16 +198,6 @@ footer a {
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-    }
-
-    .projects-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
 
 
@@ -220,7 +210,7 @@ footer a {
     border-radius: 5px;
     color: var(--verdeEsmeralda);
     font-size: 1.2rem;
-} */
+} 
 
 .skills-list {
     display: flex;
@@ -283,3 +273,18 @@ footer a {
     transform: scale(1.2);
     transition: transform 0.3s ease;
 }
+
+@media (max-width: 768px) {
+        .header-content {
+            flex-direction: column;
+        }
+    
+        .projects-grid {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+    }
